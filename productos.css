@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ffc2d1;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+/* Encabezado */
+header {
+    background-color: #fdd5df;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+/* Barra de navegacion */
+nav ul {
+    list-style: none;
+    background-color: #ffc2d1;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 14px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero {
+    background: url(https://i.pinimg.com/1200x/04/bf/9c/04bf9cfc0b7bdc4c407b718104a3b018.jpg) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(255, 254, 254, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.btn {
+    background-color: #ffffff;
+    color: #fae8ed;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+} 
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.card img:hover {
+    transform: scale(0.1);
+}
+
+.card h2 {
+    margin-bottom: 0.4rem;
+}
+
+.card a {
+    color: #ffb2c5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #ffb2c5;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}

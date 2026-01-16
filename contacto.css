@@ -1,0 +1,114 @@
+/* contacto.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fondo general rosado suave */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fce4ec;
+    color: #4a4a4a;
+    line-height: 1.6;
+  }
+  
+  /* Encabezado */
+  .header {
+    background-color: #fdd5df;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #fdd5df;
+  }
+  
+  .logo {
+    font-size: 2.5em;
+    color: #ffa2b9;
+    margin-bottom: 5px;
+  }
+  
+  .tagline {
+    font-size: 1.2em;
+    color: #ad1457;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    background-color: #ffc2d1;
+    padding: 10px 0;
+  }
+  
+  .navlist {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .navitem a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navitem a:hover {
+    background-color: #ec407a;
+  }
+  
+  /* Sección de dirección */
+  .address {
+    padding: 30px;
+    text-align: center;
+    background-color: #fce4ec;
+  }
+  
+  .address-title {
+    font-size: 1.8em;
+    color: #ffa2b9;
+    margin-bottom: 10px;
+  }
+  
+  .address-line {
+    font-size: 1em;
+    color: #6a1b9a;
+  }
+  
+  /* Contenido principal */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .side {
+    background-color: #fff0f5;
+    border: 1px solid #f8bbd0;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .side h2 {
+    color: #ffa2b9;
+    margin-bottom: 10px;
+  }
+  
+  .side p {
+    color: #4a148c;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
